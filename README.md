@@ -46,15 +46,15 @@ Kurulum ve Çalıştırma
  
  2-Sanal ortam oluşturmanızı öneririm:
  
- python -m venv venv  
+``` python -m venv venv  ```
  
- source venv/bin/activate  # Linux/Mac  
+``` source venv/bin/activate  # Linux/Mac  ```
  
- venv\Scripts\activate     # Windows  
+```venv\Scripts\activate     # Windows  ```
  
  3-Gerekli kütüphaneleri yükleyin:
  
- pip install -r requirements.txt  
+``` pip install -r requirements.txt  ```
  
  4-Python dosyasını çalıştırarak modeli eğitin ve sonuçları inceleyebilirsiniz.
  
