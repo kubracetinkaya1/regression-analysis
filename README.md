@@ -1,71 +1,61 @@
-Yapay Zekaya Giriş - CatBoost Regresyon 
+# Regression Analysis - CatBoost Regresyon
 
 Bu proje, CatBoost regresyon algoritması kullanarak verilen veri setinde hedef sütunun tahmin edilmesini amaçlamaktadır. Modelin hiperparametreleri Grid Search algoritmasıyla optimize edilmiş ve sonuçlar 10 kat çapraz doğrulama yöntemi ile değerlendirilmiştir.
 
-İçerik
+---
 
-Python kodu ile model eğitimi ve tahminler
+## İçerik
 
-Grid Search sonucu bulunan en iyi hiperparametreler tablosu
+- Python kodu ile model eğitimi ve tahminler  
+- Grid Search sonucu bulunan en iyi hiperparametreler tablosu  
+- Gerçek ve tahmin edilen değerlerin karşılaştırıldığı Excel dosyası (fark sütunu dahil)  
+- Hesaplanan performans metrikleri: **R², MAE, RMSE**  
+- Korelasyon matrisi (Heatmap) görseli  
+- Scatterplot Matrix (Dağılım Grafikleri) görseli  
+- Seaborn ile oluşturulan çift grafikler (Pairs Plot)  
+- Özellik önem derecesi grafiği  
 
-Gerçek ve tahmin edilen değerlerin karşılaştırıldığı Excel dosyası (fark sütunu dahil)
+---
 
-Hesaplanan performans metrikleri: R², MAE, RMSE
+## Kullanılan Teknolojiler ve Kütüphaneler
 
-Korelasyon matrisi (Heatmap) görseli
+- Python 3.x  
+- CatBoost  
+- scikit-learn  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- openpyxl (Excel dosyası işlemleri için)  
 
-Scatterplot Matrix (Dağılım Grafikleri) görseli
+---
 
-Seaborn ile oluşturulan çift grafikler (Pairs Plot)
+## Kurulum ve Çalıştırma
 
-Özellik önem derecesi grafiği
+1. Projeyi klonlayın veya zip dosyasını açın.
 
+2. Sanal ortam oluşturmanızı öneririm:
 
-Kullanılan Teknolojiler ve Kütüphaneler
+   ```bash
+   python -m venv venv
+   Linux / Mac:  
+   source venv/bin/activate
+   Windows:  
+   venv\Scripts\activate
+   
+ 3.Gerekli kütüphaneleri yükleyin:
 
-Python 3.x
+   ```bash
+   pip install -r requirements.txt  
+  ```
+4. Python dosyasını çalıştırarak modeli eğitin ve sonuçları inceleyin.
 
-CatBoost
-
-scikit-learn
-
-pandas
-
-numpy
-
-matplotlib
-
-seaborn
-
-openpyxl (Excel dosyası işlemleri için)
-
-
-Kurulum ve Çalıştırma
-
- 1-Projeyi klonlayın veya zip dosyasını açın.
- 
- 2-Sanal ortam oluşturmanızı öneririm:
- 
-``` python -m venv venv  ```
- 
-``` source venv/bin/activate  # Linux/Mac  ```
- 
-```venv\Scripts\activate     # Windows  ```
- 
- 3-Gerekli kütüphaneleri yükleyin:
- 
-``` pip install -r requirements.txt  ```
- 
- 4-Python dosyasını çalıştırarak modeli eğitin ve sonuçları inceleyebilirsiniz.
- 
- 
-Notlar
+ ##  Notlar
 
 Veri seti ve rapor dosyaları proje klasöründe mevcuttur.
 
 Model performansını artırmak için farklı hiperparametreler denenebilir.
 
 Görseller proje çıktıları arasında yer almaktadır.
-
 
 
